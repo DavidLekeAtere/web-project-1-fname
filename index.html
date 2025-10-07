@@ -5,27 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Image</title>
     <style>
+        header, nav, footer {
+          background-color: black;
+          color: white;
+        }
         header, footer {
-            background-color: black;
-            color: white;
-            text-align: center;
+          text-align: center;
         }
         body {
-            margin: 0;
-            padding: 0;
+          margin: 0;
+          padding: 0;
         }
-        img {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
+        header h1 {
+          margin: 0;
+        }
+        header img {
+          float: left;
+        }
+        nav ul {
+          margin-left: 180px;
+          padding-bottom: 50px;
+          margin-top: 0;
+        }
+        nav ul a:link {
+          color: white;
+        }
+        nav ul a:hover {
+          color: gold;
+        }
+        nav ul a:visited {
+          color: magenta;
+        }
+        main {
+          clear: left;
         }
     </style>
 </head>
 <body>
     <header>
-    <h1>Lebron's Life and Achievements</h1>
-    <img src="images/Screenshot 2025-10-06 144010.png" alt="Website logo" width="180 px" height="180 px">
+      <img src="images/Screenshot 2025-10-06 144010.png" alt="Website logo" width="180 px" height="180 px">
+      <h1>Lebron's Life and Achievements</h1>
     </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biography.html">Biography</a></li>
+        <li><a href="achievments.html">Achievements</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h3>How it all started</h3>
+    </main>
 </body>
 </html>
