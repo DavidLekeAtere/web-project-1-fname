@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fan </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lakers Fan Test Page</title>
 </head>
 <body>
-    
+  <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="creation.html">Creation</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+				<li><a href="Fan test.html">Fan test</a></li>
+      </ul>
+    </nav>
+  <!-- HEADER SECTION -->
+  <header>
+    <h1>Welcome to the <u>Los Angeles Lakers</u> Fan Test!</h1>
+    <p>
+      Are you a <b>true</b> fan of the <i>Lakers</i>? 
+      This short quiz will help prove it. 
+      Remember, the Lakers have a rich history dating back to 1947 and have won many <sup>NBA</sup> titles. 
+      Some even say their legacy is <del>temporary</del> <b><i>forever</i></b>.
+    </p>
+  </header>
+
+  <!-- MAIN CONTENT SECTION -->
+  <main>
+    <h2>Fan Knowledge Form</h2>
+    <p>
+      Please fill out the form below carefully. Fields marked with <b>*</b> are required. 
+      Note: The Lakers' first home was in Minneapolis, known as the "Land of 10,000 Lakes" 
+      just like H<sub>2</sub>O represents water.
+    </p>
+
+    <!-- FORM START -->
+    <!-- This form collects fan information and preferences -->
+    <form action="#" method="post">
+
+      <!-- FIELDSET GROUP 1: BASIC INFORMATION -->
+      <fieldset>
+        <legend>Basic Information</legend>
+
+        <!-- Text input for user's name -->
+        <label for="name">Full Name*:</label><br>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <!-- Email input for fan's email address -->
+        <label for="email">Email*:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+      </fieldset>
+
+      <!-- FIELDSET GROUP 2: FAN PREFERENCES -->
+      <fieldset>
+        <legend>Fan Preferences</legend>
+
+        <!-- Radio input for selecting favorite Lakers player -->
+        <p>Who is your favorite Lakers player? (Select one)</p>
+        <input type="radio" id="kobe" name="player" value="Kobe Bryant">
+        <label for="kobe">Kobe Bryant</label><br>
+
+        <input type="radio" id="magic" name="player" value="Magic Johnson">
+        <label for="magic">Magic Johnson</label><br>
+
+        <input type="radio" id="lebron" name="player" value="LeBron James">
+        <label for="lebron">LeBron James</label><br>
+
+        <input type="radio" id="shaq" name="player" value="Shaquille O'Neal">
+        <label for="shaq">Shaquille O'Neal</label><br>
+
+        <input type="radio" id="other" name="player" value="Other">
+        <label for="other">Other</label><br>
+      </fieldset>
+
+      <!-- FIELDSET GROUP 3: NEW INPUT TYPE -->
+      <fieldset>
+        <legend>Bonus Question</legend>
+
+        <!-- This input type "color" was not covered in lessons. 
+          It allows the user to pick their favorite Lakers color -->
+        <label for="favcolor">Pick your favorite Lakers color:</label><br>
+        <input type="color" id="favcolor" name="favcolor">
+        <br><br>
+      </fieldset>
+			<p>2. Which of the following players were Lakers legends? (Select all that apply)</p>
+  <input type="checkbox" id="q2a" name="q2" value="Kobe Bryant">
+  <label for="q2a">Kobe Bryant</label><br>
+
+  <input type="checkbox" id="q2b" name="q2" value="Magic Johnson">
+  <label for="q2b">Magic Johnson</label><br>
+
+  <input type="checkbox" id="q2c" name="q2" value="LeBron James">
+  <label for="q2c">LeBron James</label><br>
+
+  <input type="checkbox" id="q2d" name="q2" value="Michael Jordan">
+  <label for="q2d">Michael Jordan</label><br><br>
+
+  <!-- TEXT INPUT QUESTION -->
+  <!-- Short answer -->
+  <p>3. Who is the Lakers’ current controlling owner?</p>
+  <label for="q3">Your answer:</label><br>
+  <input type="text" id="q3" name="q3">
+  <br><br>
+
+  <!-- NUMBER INPUT -->
+  <!-- User enters a numeric answer -->
+  <p>4. How many NBA championships have the Lakers won?</p>
+  <label for="q4">Enter a number:</label><br>
+  <input type="number" id="q4" name="q4" min="0" max="50">
+  <br><br>
+
+
+      <!-- SUBMIT BUTTON -->
+      <!-- Submits the form -->
+      <input type="submit" value="Submit Quiz">
+    </form>
+    <!-- FORM END -->
+
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer>
+    <p>&#169; 2025 David Leke-Atere</p>
+  </footer>
+
 </body>
 </html>
