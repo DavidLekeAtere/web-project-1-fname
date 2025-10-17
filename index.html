@@ -1,96 +1,133 @@
+<!--
+  This is the main HTML document for the Los Angeles Lakers fan page.
+  It includes sections for team creation, achievements, and a fan test.
+  Name: David Leke-Atere
+  course:Web Development 10S
+  Teacher: Mr. Hardman 
+  School: Pembina Trails Collegiate (PTC)
+  Date last modified: October 17, 2024
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Image</title>
-    <style>
-        header, nav, footer {
-          background-color: rgb(0, 0, 0);
-          color: white;
-        }
-        header, footer {
-          text-align: center;
-        }
-        body {
-          margin: 0;
-          padding: 0;
-        }
-        header h1 {
-          margin: 0;
-        }
-        header img {
-          float: left;
-        }
-        nav ul {
-          margin-left: 180px;
-          padding-bottom: 50px;
-          margin-top: 0;
-        }
-        nav ul a:link {
-          color: white;
-        }
-        nav ul a:hover {
-          color: gold;
-        }
-        nav ul a:visited {
-          color: magenta;
-        }
-        main {
-          clear: left;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lakers Creation and Achievements</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    header, nav, footer {
+      background-color: black;
+      color: white;
+    }
+
+    header, footer {
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    header img {
+      float: left;
+    }
+
+    nav ul {
+      margin-left: 180px;
+      padding: 0;
+      margin-top: 0;
+      list-style-type: none; /* removes bullets for a cleaner nav */
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a:link {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      color: gold;
+    }
+
+    nav ul li a:visited {
+      color: magenta;
+    }
+
+    main {
+      clear: left;
+      padding: 20px;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-    <header>
-      <img src="images/1-94aacb26.jpg" alt="Website logo" width="180 px" height="180 px">
-      <h1>The Lakers creation and Achievements</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="creation.html">Creation</a></li>
-        <li><a href="achievements.html">Achievements</a></li>
-        <li><a href="Fan test.html">Fan test</a></li>
-      </ul>
-    </nav>
-    <main>
-      <h2>Welcome to the Los Angeles Lakers fan page</h2>
-      <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/1200px-Los_Angeles_Lakers_logo.svg.png" alt="Los Angeles Lakers logo" height="300 px" width="400 px">
-      <p>This page is dedicated to the Los Angeles Lakers, one of the most successful and popular teams in the NBA. Here, you will find information about the team's creation and its numerous achievements over the years.</p>
-      <h3>Team Creation</h3>
-        <ul>
-          <li>Date founded</li>
-          <li>Originally based somewhere else</li>
-          <li>Why and when did they move to LA</li>
-        </ul>
 
-      <h3>Team Achievements</h3>
-      <ul>
-        <li>NBA Championships</li>
-        <li>Conference Titles</li>
-        <li>Hall of Fame Players</li>
-      </ul>
+  <header>
+    <img src="images/1-94aacb26.jpg" alt="Lakers Logo" width="180" height="180">
+    <h1>The Lakers Creation and Achievements</h1>
+  </header>
 
-      <h3>Fan Test</h3>
-      <ul>
-        <li>Test your knowledge about the Lakers</li>
-        <li>Fun facts about the team</li>
-        <li>Interactive quizzes</li>
-      </ul><br><br><br><br>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="creation.html">Creation</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="Fan test.html">Fan Test</a></li>
+    </ul>
+  </nav>
 
-    </main>
-    <footer style="position: fixed; bottom: 0">
-    <!--
-      &#169; is an example of an HTML enitity. Entities are used to display special characters that 
-      are not on a typical English keyboard or symbols that are reserved for specail purposes in 
-      HTML (for example, <, >, etc.).
+  <main>
+    <h2>Welcome to the Los Angeles Lakers Fan Page</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/1200px-Los_Angeles_Lakers_logo.svg.png" 
+        alt="Official Los Angeles Lakers Logo" width="400" height="300">
+    <p>
+      This page is dedicated to the Los Angeles Lakers, one of the most successful and popular teams in the NBA. 
+      Here, you will find information about the team's creation and its numerous achievements over the years.
+    </p>
 
-      You can use entitiy names, like &copy; which would display the copyright symbol. however, 
-      not all browsers recognize entity names, so using entity numbers, like &#169; which displays
-      the copyright symbol, is safer.
+    <h3>Team Creation</h3>
+    <ul>
+      <li>Date founded</li>
+      <li>Originally based somewhere else</li>
+      <li>Why and when did they move to LA</li>
+    </ul>
+
+    <h3>Team Achievements</h3>
+    <ul>
+      <li>NBA Championships</li>
+      <li>Conference Titles</li>
+      <li>Hall of Fame Players</li>
+    </ul>
+
+    <h3>Fan Test</h3>
+    <ul>
+      <li>Test your knowledge about the Lakers</li>
+      <li>Fun facts about the team</li>
+      <li>Interactive quizzes</li>
+    </ul><br><br><br>
+  </main>
+
+  <footer>
+    <!-- 
+      &#169; is an example of an HTML entity. Entities are used to display special characters that 
+      are not on a typical English keyboard or symbols that are reserved for special purposes in HTML. 
+      Example: <, >, ©, etc.
     -->
-      <p>&#169;2025 - David Leke-Atere</p>
+    <p>&#169; 2025 - David Leke-Atere</p>
   </footer>
+
 </body>
 </html>
